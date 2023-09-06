@@ -33,7 +33,12 @@ export const CustomizeProvider = ({ children }) => {
 // **************************************component **********************************
 import { useCustomizeContext } from "../../Context/context";
 
-
- const {
+const {
     Commonlist: { Metamaskaddress },
   } = useCustomizeContext();
+
+// ************************************* index.js ***********************************
+import { CustomizeProvider } from './Context/context';
+  <CustomizeProvider>
+    <App />
+    </CustomizeProvider>
