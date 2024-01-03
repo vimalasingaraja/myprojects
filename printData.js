@@ -18,7 +18,7 @@ const PrintTable = () => {
     })
 
     return (
-        <div>
+        <div className="prnTbl">
             <div ref={contentPDF}>
 
                 <h2>Customer detail
