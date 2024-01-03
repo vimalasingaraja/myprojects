@@ -1,0 +1,50 @@
+git init 
+git remote add origin (git url)
+
+git fetch && git checkout (branch)
+git branch -a
+
+
+git fetch
+git checkout (branch)
+
+
+ANOTHER WAY
+
+git clone (git url)
+git clone (git url) -b (branch)
+
+
+
+git status
+git add .
+git commit -m "message"
+git pull origin dev
+git push origin dev
+
+
+GIT REVERT COMMANDS
+-----------------
+
+git log
+git reset --hard
+git checkout filename
+
+git stash save		********STORED WORKING DIRECTORY************
+git stash pop		********UNSTORED WORKING DIRECTORY**********
+
+SSH COMMANDS
+-------------
+
+ls
+cd .. 
+cd (folder name)
+ls
+pwd
+
+
+
+NPM ISSUE
+----------
+
+npm i --legacy-peer-deps
