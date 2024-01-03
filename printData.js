@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
+import { CSVLink } from "react-csv";
 
 const PrintTable = () => {
 
@@ -13,7 +14,7 @@ const PrintTable = () => {
 
     const generatePdf=useReactToPrint({
         content: ()=>contentPDF.current,
-        documentTitle: "Customerdata",
+        documentTitle: "Userdata",
         onAfterPrint:()=>alert("Data saved in PDF")
     })
 
@@ -23,6 +24,7 @@ const PrintTable = () => {
 
                 <h2>Customer detail
                 <button onClick={generatePdf}>Print</button>
+                <CSVLink data={data} filename="Userdata.csv">Print CSV</CSVLink>
                 </h2>
 
                 <table>
